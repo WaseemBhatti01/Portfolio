@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Muhammad Waseem Ahmed - Unity Game Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="#home">Muhammad Waseem</a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li class="dropdown">
+                    <a href="#portfolio" class="nav-link">Portfolio <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#portfolio" data-filter="all">All Games</a></li>
+                        <li><a href="#portfolio" data-filter="racing">Racing</a></li>
+                        <li><a href="#portfolio" data-filter="simulation">Simulation</a></li>
+                        <li><a href="#portfolio" data-filter="shooting">Shooting</a></li>
+                        <li><a href="#portfolio" data-filter="roleplay">Role Play</a></li>
+                    </ul>
+                </li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <img src="images/My Profile Photo.jpeg" alt="Muhammad Waseem Ahmed" class="hero-bg-image" onerror="this.style.display='none'">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">I am <span class="highlight">Muhammad Waseem Ahmed</span></h1>
+                    <p class="hero-subtitle"><span id="typing-text"></span><span class="typing-cursor">|</span></p>
+                    <div class="hero-buttons">
+                        <a href="https://play.google.com/store/apps/dev?id=6973226670096639846" class="btn btn-primary btn-advanced" target="_blank">
+                            <span class="btn-icon"><i class="fab fa-google-play"></i></span>
+                            <span class="btn-text">View My Games on Play Store</span>
+                            <span class="btn-arrow"><i class="fas fa-arrow-right"></i></span>
+                        </a>
+                        <a href="https://apps.apple.com/us/developer/inside-out-games/id1664446009" class="btn btn-primary btn-advanced" target="_blank">
+                            <span class="btn-icon"><i class="fab fa-apple"></i></span>
+                            <span class="btn-text">View My Games on App Store</span>
+                            <span class="btn-arrow"><i class="fas fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/Portfolio picture.jpeg" alt="Muhammad Waseem Ahmed" onerror="this.style.display='none'">
+                </div>
+                <div class="about-text">
+                    <p>
+                        I'm Muhammad Waseem Ahmed, a Unity game developer with 4+ years of experience building mobile games that people actually enjoy playing. My love for game development started way back in childhood. I wasn't just playing — I was always curious about how these worlds were made, and that curiosity slowly turned into a passion.
+                    </p>
+                    <p>
+                        I completed my BS in Computer Science from NCBA&E, Lahore, which gave me a strong technical foundation in programming and game development. What started as a personal interest gradually turned into a full-time passion for building complete, polished games from the ground up.
+                    </p>
+                    <div class="about-more" id="about-more">
+                        <p>
+                            Over the years, I've worked on a wide range of games, including role-playing, simulation, racing, and hyper-casual titles. I have designed and refined multiple controllers, core gameplay mechanics, and complete game flows, managing projects from initial concept through to final build.
+                        </p>
+                        <p>
+                            I primarily work with Unity and C#, developing games for both Android and iOS platforms. I have strong experience integrating analytics, advertising, and monetization SDKs, ensuring accurate tracking and stable performance. I focus on writing clean, efficient code and optimizing gameplay for smooth performance across a wide range of mobile devices. Performance, scalability, and user experience remain key priorities throughout development.
+                        </p>
+                        <p>
+                            Most importantly, I'm a gamer myself. Gaming genuinely makes me happy, and that helps me think from a player's perspective while designing mechanics, controls, and progression. When I'm not coding, I'm usually brainstorming new ideas or thinking about how to make gameplay feel smoother and more fun.
+                        </p>
+                        <p>
+                            Every project teaches me something new, and that constant learning is what keeps me motivated to build better games — not just playable ones, but memorable ones 🎮🔥
+                        </p>
+                    </div>
+                    <div class="about-actions">
+                        <button type="button" class="btn btn-primary" id="aboutToggle">
+                            <span class="btn-text">Read More</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="about-info">
+                    <div class="info-item">
+                        <strong>Name:</strong> Muhammad Waseem Ahmed
+                    </div>
+                    <div class="info-item">
+                        <strong>Profile:</strong> Unity Game Developer
+                    </div>
+                    <div class="info-item">
+                        <strong>Email:</strong> waseemnadeem453@gmail.com
+                    </div>
+                    <div class="info-item">
+                        <strong>Phone:</strong> 0322 4178229
+                    </div>
+                </div>
+            </div>
+            <div class="skills">
+                <h3 class="skills-title">Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Unity</span>
+                            <span class="skill-percent">100%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>C#</span>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Version Control (Git Workflow)</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Ad Monetization (Unity Ads, AdMob, AppLovin)</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>In-App Purchases (IAP)</span>
+                                    <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Analytics (Game Analytics - GA, FireBase, Solar Engine)</span>
+                                    <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Full Game Development</h3>
+                    <p>End-to-end development of 2D/3D games, from concept to final product.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Prototyping and MVP Development</h3>
+                    <p>Rapid development of game prototypes and minimum viable products.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design and Development</h3>
+                    <p>Creating intuitive and visually appealing user interfaces for games.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3>Integrating Third-party Services</h3>
+                    <p>Setting up services like Firebase, in-app purchases, and push notifications.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Level Design</h3>
+                    <p>Designing engaging game levels and environments.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>In-game Monetization Features</h3>
+                    <p>Implementing ads, rewarded videos, and microtransactions.</p>
+                </div>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="3">0</div>
+                    <div class="stat-label">Platforms</div>
+                    <div class="stat-detail" style="font-size: 0.85rem; color: var(--text-light); margin-top: 0.5rem;">Android • iOS • Amazon</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="100" data-suffix="+">0</div>
+                    <div class="stat-label">Projects</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="5000" data-suffix="+">0</div>
+                    <div class="stat-label">Hours Of Support</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="20" data-suffix="+">0</div>
+                    <div class="stat-label">Clients</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <p class="section-subtitle">Here are the games I've developed and contributed to, showcasing my skills and creativity in Unity game development</p>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all"><span>All</span></button>
+                <button class="filter-btn" data-filter="racing"><span>Racing</span></button>
+                <button class="filter-btn" data-filter="simulation"><span>Simulation</span></button>
+                <button class="filter-btn" data-filter="shooting"><span>Shooting</span></button>
+                <button class="filter-btn" data-filter="roleplay"><span>Role Play</span></button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="simulation">
+                    <div class="portfolio-image">
+                        <img src="images/My horse Herd Care Simulator.jpeg" alt="My horse Herd Care Simulator" onerror="this.style.display='none'">
+                        <div class="portfolio-overlay">
+                            <h3>My horse Herd Care Simulator</h3>
+                            <div class="portfolio-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.iog.stable.rival.horse.sim.care.breed.racing.farm.games" class="portfolio-link" title="View on Play Store (Android)" target="_blank"><i class="fab fa-google-play"></i></a>
+                                <a href="https://apps.apple.com/us/app/my-stable-horse-herd-care-sim/id6449293050" class="portfolio-link" title="View on App Store (iOS)" target="_blank"><i class="fab fa-apple"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="simulation">
+                    <div class="portfolio-image">
+                        <img src="images/Trailer Truck Car Transporter.jpeg" alt="Trailer Truck Car Transporter" onerror="this.style.display='none'">
+                        <div class="portfolio-overlay">
+                            <h3>Trailer Truck Car Transporter</h3>
+                            <div class="portfolio-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.insideoutgames.cargo.trailer.carrier.transport.trailer.truck.games" class="portfolio-link" title="View on Play Store (Android)" target="_blank"><i class="fab fa-google-play"></i></a>
+                                <a href="https://apps.apple.com/us/app/euro-truck-cars-transporter/id6741189124" class="portfolio-link" title="View on App Store (iOS)" target="_blank"><i class="fab fa-apple"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="shooting">
+                    <div class="portfolio-image">
+                        <img src="images/Wild Duck Hunter Birds Shooter.jpeg" alt="Wild Duck Hunter Birds Shooter" onerror="this.style.display='none'">
+                        <div class="portfolio-overlay">
+                            <h3>Wild Duck Hunter Birds Shooter</h3>
+                            <div class="portfolio-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.iog.wild.birds.duck.ultimate.hunter.hunting.shooting.game" class="portfolio-link" title="View on Play Store (Android)" target="_blank"><i class="fab fa-google-play"></i></a>
+                                <a href="https://apps.apple.com/us/app/wild-duck-hunter-shooting-game/id6497224419" class="portfolio-link" title="View on App Store (iOS)" target="_blank"><i class="fab fa-apple"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="roleplay">
+                    <div class="portfolio-image">
+                        <img src="images/My Fantasy Horse Ranch Racer.jpeg" alt="My Fantasy Horse Ranch Racer" onerror="this.style.display='none'">
+                        <div class="portfolio-overlay">
+                            <h3>My Fantasy Horse Ranch Racer</h3>
+                            <div class="portfolio-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.mgp.fairy.rival.horse.pony.stable.sim.care.breed.racing.games" class="portfolio-link" title="View on Play Store (Android)" target="_blank"><i class="fab fa-google-play"></i></a>
+                                <a href="https://apps.apple.com/us/app/my-fantasy-girls-horse-care-3d/id6472172967" class="portfolio-link" title="View on App Store (iOS)" target="_blank"><i class="fab fa-apple"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="simulation">
+                    <div class="portfolio-image">
+                        <img src="images/Pipa Layang Kite Flying Game.png" alt="Pipa Layang Kite Flying Game" onerror="this.style.display='none'">
+                        <div class="portfolio-overlay">
+                            <h3>Pipa Layang Kite Flying Game</h3>
+                            <div class="portfolio-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.protechgames.kite.flying.pipacombat.layanglayang.festival.game" class="portfolio-link" title="View on Play Store (Android)" target="_blank"><i class="fab fa-google-play"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="roleplay">
+                    <div class="portfolio-image">
+                        <img src="images/Wild Parrot Jungle Land Sim.jpeg" alt="Wild Parrot Jungle Land Sim" onerror="this.style.display='none'">
+                        <div class="portfolio-overlay">
+                            <h3>Wild Parrot Jungle Land Sim</h3>
+                            <div class="portfolio-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.iog.parrot.jungle.land.care.life.jungle.wild.simulator.survival.game" class="portfolio-link" title="View on Play Store (Android)" target="_blank"><i class="fab fa-google-play"></i></a>
+                                <a href="https://apps.apple.com/us/app/wild-parrot-family-simulator/id6578443389" class="portfolio-link" title="View on App Store (iOS)" target="_blank"><i class="fab fa-apple"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="racing">
+                    <div class="portfolio-image">
+                        <img src="images/Crazy Street Stock Cars Racing.jpeg" alt="Crazy Street Stock Cars Racing" onerror="this.style.display='none'">
+                        <div class="portfolio-overlay">
+                            <h3>Crazy Street Stock Cars Racing</h3>
+                            <div class="portfolio-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.cg.topspeed.stock.racing" class="portfolio-link" title="View on Play Store (Android)" target="_blank"><i class="fab fa-google-play"></i></a>
+                                <a href="https://apps.apple.com/ro/app/real-stock-car-racing-stunts/id6468884150" class="portfolio-link" title="View on App Store (iOS)" target="_blank"><i class="fab fa-apple"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="simulation">
+                    <div class="portfolio-image">
+                        <img src="images/Gas Station Market Simulator.jpeg" alt="Gas Station Market Simulator" onerror="this.style.display='none'">
+                        <div class="portfolio-overlay">
+                            <h3>Gas Station Market Simulator</h3>
+                            <div class="portfolio-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.gb.junyard.tycoon.gas.idle.gas.station.simulator" class="portfolio-link" title="View on Play Store (Android)" target="_blank"><i class="fab fa-google-play"></i></a>
+                                <a href="https://apps.apple.com/ro/app/my-gas-station-market-sim/id6444722292" class="portfolio-link" title="View on App Store (iOS)" target="_blank"><i class="fab fa-apple"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="racing">
+                    <div class="portfolio-image">
+                        <img src="images/BMX Bike Racing Bicycle Games.jpeg" alt="BMX Bike Racing Bicycle Games" onerror="this.style.display='none'">
+                        <div class="portfolio-overlay">
+                            <h3>BMX Bike Racing Bicycle Games</h3>
+                            <div class="portfolio-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.cg.bmxstunts.freestyle.racing" class="portfolio-link" title="View on Play Store (Android)" target="_blank"><i class="fab fa-google-play"></i></a>
+                                <a href="https://apps.apple.com/ro/app/bmx-bicycle-racing-stunts/id1438737834" class="portfolio-link" title="View on App Store (iOS)" target="_blank"><i class="fab fa-apple"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="simulation">
+                    <div class="portfolio-image">
+                        <img src="images/Crazy Wild Goose Family Sim.jpeg" alt="Crazy Wild Goose Family Sim" onerror="this.style.display='none'">
+                        <div class="portfolio-overlay">
+                            <h3>Crazy Wild Goose Family Sim</h3>
+                            <div class="portfolio-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.iog.crazy.goose.duck.life.family.sim.survival.wild.gam" class="portfolio-link" title="View on Play Store (Android)" target="_blank"><i class="fab fa-google-play"></i></a>
+                                <a href="https://apps.apple.com/us/app/crazy-goose-duck-tales/id6740900154" class="portfolio-link" title="View on App Store (iOS)" target="_blank"><i class="fab fa-apple"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="simulation">
+                    <div class="portfolio-image">
+                        <img src="images/Fix My Car Garage Restore.jpeg" alt="Fix My Car Garage Restore" onerror="this.style.display='none'">
+                        <div class="portfolio-overlay">
+                            <h3>Fix My Car Garage Restore</h3>
+                            <div class="portfolio-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.iog.fix.my.car.garage.restore.broken.mechanic.sim.game" class="portfolio-link" title="View on Play Store (Android)" target="_blank"><i class="fab fa-google-play"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end .portfolio-grid -->
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-content">
+                <div class="resume-summary">
+                    <h3>Summary</h3>
+                    <div class="summary-card">
+                        <h4>Muhammad Waseem Ahmed</h4>
+                        <p>Unity game developer with 4+ years of experience building mobile games. Specializing in role-playing, simulation, racing, and hyper-casual titles. Expert in Unity, C#, and integrating analytics, advertising, and monetization SDKs for Android and iOS platforms.</p>
+                        <div class="summary-info">
+                            <p><i class="fas fa-map-marker-alt"></i> New Garden Town, Lahore, Pakistan</p>
+                            <p><i class="fas fa-phone"></i> 0322 4178229</p>
+                            <p><i class="fas fa-envelope"></i> waseemnadeem453@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-sections">
+                    <div class="resume-section">
+                        <h3>Education</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2018 - 2022</div>
+                                <div class="timeline-content">
+                                    <h4>Bachelor of Science in Computer Science (BS-CS)</h4>
+                                    <p class="timeline-location">National College of Business Administration &amp; Economics (NCBAE) Main Campus</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2015 - 2017</div>
+                                <div class="timeline-content">
+                                    <h4>FSc (Pre Engineering)</h4>
+                                    <p class="timeline-location">Govt. Islamia College Civil Lines Lahore</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resume-section">
+                        <h3>Final Year Project</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2022</div>
+                                <div class="timeline-content">
+                                    <h4>Oil Truck Transport Simulator</h4>
+                                    <p class="timeline-location">National College of Business Administration &amp; Economics (NCBAE) Main Campus</p>
+                                    <p style="margin-bottom: 1rem; color: var(--text-light); line-height: 1.6;"><span class="fyp-inline">Final Year Project</span> - City-based oil tanker transportation game developed using Unity, where players pick up and deliver oil tankers to various petrol pumps across different city locations. The game features smooth truck controls, realistic driving mechanics, and structured pickup-and-drop gameplay. Designed with a focus on immersive simulation, performance optimization, and an engaging player experience.</p>
+                                    <ul>
+                                        <li>Developed complete game using Unity and C#</li>
+                                        <li>Implemented realistic 3D graphics and physics</li>
+                                        <li>Designed intuitive truck controls and realistic oil tanker delivery mechanics</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resume-section">
+                        <h3>Professional Experience</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">Nov 2023 - Present</div>
+                                <div class="timeline-content">
+                                    <h4>Senior Game Developer</h4>
+                                    <p class="timeline-location">Inside Out Games, Lahore, Pakistan</p>
+                                    <ul>
+                                        <li>Leading feature development in Unity for Android and iOS titles</li>
+                                        <li>Architecting core gameplay systems, game flows, and reusable components</li>
+                                        <li>Owning SDK integrations (analytics, ads, monetization) with stable releases and accurate event tracking</li>
+                                        <li>Profiling and optimizing performance (CPU/GPU/memory) to ensure smooth gameplay across devices</li>
+                                        <li>Supporting team collaboration through reviews, debugging, and improving development workflows</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">Nov 2021 - Oct 2023</div>
+                                <div class="timeline-content">
+                                    <h4>Unity Game Developer</h4>
+                                    <p class="timeline-location">The Game Object, Lahore, Pakistan</p>
+                                    <ul>
+                                        <li>Built and shipped mobile games in Unity (C#), taking features from prototype to production</li>
+                                        <li>Implemented player controllers, UI screens, and complete pickup/drop style gameplay loops</li>
+                                        <li>Worked on multiple genres (simulation, racing, hyper-casual) with focus on fun and polish</li>
+                                        <li>Integrated third-party plugins/SDKs and fixed production issues to keep builds stable</li>
+                                        <li>Optimized gameplay and loading times for better performance on low to mid-end devices</li>
+                                        <li>Collaborated closely with artists/designers to iterate quickly on mechanics and UX</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Address</h3>
+                            <p>New Garden Town, Lahore, Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Call Us</h3>
+                            <p>0322 4178229</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email Us</h3>
+                            <p>waseemnadeem453@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loading" style="display: none;">Sending...</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; Copyright <strong>Muhammad Waseem Ahmed</strong> All Rights Reserved</p>
+            <p>Designed by Muhammad Waseem Ahmed</p>
+        </div>
+    </footer>
+
+    <div class="loading-overlay" id="loadingOverlay" style="display: none;">
+        <div class="loading-spinner"></div>
+        <p>Your message has been sent. Thank you!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
